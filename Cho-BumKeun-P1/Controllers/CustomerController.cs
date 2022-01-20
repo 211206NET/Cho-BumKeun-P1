@@ -22,18 +22,18 @@ namespace Cho_BumKeun_P1.Controllers
         }
 
         // GET: api/<CustomerController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
 
         // GET api/<CustomerController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //[HttpGet("{id}")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
         // POST api/<CustomerController>
         [HttpPost]
@@ -42,7 +42,7 @@ namespace Cho_BumKeun_P1.Controllers
             try
             {
                 _bl.AddCustomer(customerToAdd);
-                return Created("Successfully added", customerToAdd);
+                return Created("Successfully signed up", customerToAdd);
             }
             catch (DuplicateRecordException ex)
             {

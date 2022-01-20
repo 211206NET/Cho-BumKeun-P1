@@ -24,8 +24,8 @@ namespace Cho_BumKeun_P1.Controllers
         [HttpGet]
         public List<Product> Get()
         {
-            List<Product> allProd = _bl.GetAllProducts();
-            _memoryCache.Set("product", allProd, new TimeSpan(0, 0, 30));
+            //List<Product> allProd = _bl.GetAllProducts();
+            //_memoryCache.Set("product", allProd, new TimeSpan(0, 0, 30));
             return _bl.GetAllProducts();
         }
 
@@ -45,10 +45,10 @@ namespace Cho_BumKeun_P1.Controllers
         }
 
         // POST api/<ProductController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+        //[HttpPost]
+        //public void Post([FromBody] string value)
+        //{
+        //}
 
         // PUT api/<ProductController>/5
         [HttpPut("{id}")]

@@ -24,8 +24,8 @@ namespace Cho_BumKeun_P1.Controllers
         [HttpGet]
         public List<Store> Get()
         {
-            List<Store> allSto = _bl.GetAllStores();
-            _memoryCache.Set("store", allSto, new TimeSpan(0,0,30));
+            //List<Store> allSto = _bl.GetAllStores();
+            //_memoryCache.Set("store", allSto, new TimeSpan(0,0,30));
             return _bl.GetAllStores();
         }
 
@@ -45,10 +45,10 @@ namespace Cho_BumKeun_P1.Controllers
         }
 
         // POST api/<StoreController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+        //[HttpPost]
+        //public void Post([FromBody] string value)
+        //{
+        //}
 
         // PUT api/<StoreController>/5
         [HttpPut("{id}")]

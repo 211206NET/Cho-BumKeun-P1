@@ -20,26 +20,51 @@ namespace Cho_BumKeun_P1.Controllers
             _memoryCache = memoryCache;
         }
 
-        // GET: api/<OrderController>
+        //// GET: api/<OrderController>
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
+
+        // GET api/<OrderController>/5 by user ID
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<Order> GetUserOrder(int userId)
         {
-            return new string[] { "value1", "value2" };
+           //List<Order> allOrd = _bl.GetAllOrders(userId);
+           //_memoryCache.Set("order", allOrd, new TimeSpan(0, 0, 30));
+            return _bl.GetAllOrders(userId);
         }
 
-        // GET api/<OrderController>/5
+        // GET api/OrderController>/5 by store ID
         [HttpGet("{id}")]
-        public List<Order> Get(int id)
+        public List<Order> GetStoreOrder(int storeId)
         {
-            List<Order> allOrd = _bl.GetAllOrders(id);
-            _memoryCache.Set("order", allOrd, new TimeSpan(0, 0, 30));
-            return _bl.GetAllOrders(id);
+            return _bl.StoreOrders(storeId);
         }
+
+        //[HttpGet("{id}")]
+        //public ActionResult<Order> Get(int storeId)
+        //{
+        //    List<Order> foundOrd = _bl.StoreOrders(storeId);
+        //    if (foundOrd.Count != 0)
+        //    {
+        //        return Ok(foundOrd);
+        //    }
+        //    else
+        //    {
+        //        return NoContent();
+        //    }
+        //}
+
 
         // POST api/<OrderController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(int storeId, int productId, string storeName, string productName, int quantity, decimal price, int userId, DateTime time)
         {
+            List<Product> allProducts = _bl.GetAllProducts();
+            _bl.AddOrder(storeId, productId, storeName, productName, quantity, price, userId, time);
+            _bl.UpdateInventory(productId, allProducts[productId].Inventory-quantity);
         }
 
         // PUT api/<OrderController>/5
