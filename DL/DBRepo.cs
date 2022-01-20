@@ -477,4 +477,49 @@ public class DBRepo : IRepo
         Log.Information("Customer has logged in Username: {Username} Password: {Password}", customer.UserName, customer.Password);
         return acc;
     }
+
+    public Store GetStoreById(int storeId)
+    {
+        string query = "SELECT * FROM Store WHERE Id = @stoId";
+        using SqlConnection connection = new SqlConnection(_connectionString);
+        connection.Open();
+        using SqlCommand cmd = new SqlCommand(query, connection);
+        SqlParameter param = new SqlParameter("@stoId", storeId);
+        cmd.Parameters.Add(param);
+        
+        using SqlDataReader reader = cmd.ExecuteReader();
+        Store store = new Store();
+        if(reader.Read())
+        {
+            store.Id = reader.GetInt32(0);
+            store.Name = reader.GetString(1);
+            store.City = reader.GetString(2);
+            store.State = reader.GetString(3);
+        }
+        connection.Close();
+        return store;
+    }
+
+    public Product GetProductById(int productId)
+    {
+        string query = "SELECT * FROM Product WHERE Id = @prodId";
+        using SqlConnection connection = new SqlConnection(_connectionString);
+        connection.Open();
+        using SqlCommand cmd = new SqlCommand(query, connection);
+        SqlParameter param = new SqlParameter("@prodId", productId);
+        cmd.Parameters.Add(param);
+
+        using SqlDataReader reader = cmd.ExecuteReader();
+        Product product = new Product();
+        if (reader.Read())
+        {
+            product.Id = reader.GetInt32(0);
+            product.Title = reader.GetString(1);
+            product.Price = reader.GetDecimal(2);
+            product.Developer = reader.GetString(3);
+            product.Inventory = reader.GetInt32(4);
+        }
+        connection.Close();
+        return product;
+    }
 }

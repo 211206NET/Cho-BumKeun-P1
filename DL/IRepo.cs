@@ -37,4 +37,8 @@ public interface IRepo
     Customer Login(Customer existingCustomer);
 
     bool IsDuplicate(Customer customer);
+
+    Store GetStoreById(int storeId);
+
+    Product GetProductById(int productId);
 }

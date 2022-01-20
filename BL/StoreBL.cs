@@ -181,4 +181,14 @@ public class StoreBL : IBL
     {
         _dl.ReplenishInventory();
     }
+
+    public Store GetStoreById(int storeId)
+    {
+        return _dl.GetStoreById(storeId);
+    }
+
+    public Product GetProductById(int productId)
+    {
+        return _dl.GetProductById(productId);
+    }
 }

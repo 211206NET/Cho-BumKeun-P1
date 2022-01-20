@@ -35,4 +35,8 @@ public interface IBL
     void ReplenishInventory();
 
     Customer Login(Customer existingCustomer);
+
+    Store GetStoreById(int storeId);
+
+    Product GetProductById(int productId);
 }

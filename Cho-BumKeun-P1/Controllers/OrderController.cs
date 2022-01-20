@@ -10,53 +10,45 @@ namespace Cho_BumKeun_P1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StoreController : ControllerBase
+    public class OrderController : ControllerBase
     {
         private IBL _bl;
         private IMemoryCache _memoryCache;
-        public StoreController(IBL bl, IMemoryCache memoryCache)
+        public OrderController(IBL bl, IMemoryCache memoryCache)
         {
             _bl = bl;
             _memoryCache = memoryCache;
         }
 
-        // GET: api/<StoreController>
+        // GET: api/<OrderController>
         [HttpGet]
-        public List<Store> Get()
+        public IEnumerable<string> Get()
         {
-            List<Store> allSto = _bl.GetAllStores();
-            _memoryCache.Set("store", allSto, new TimeSpan(0,0,30));
-            return _bl.GetAllStores();
+            return new string[] { "value1", "value2" };
         }
 
-        // GET api/<StoreController>/5
+        // GET api/<OrderController>/5
         [HttpGet("{id}")]
-        public ActionResult<Store> Get(int id)
+        public List<Order> Get(int id)
         {
-            Store foundSto = _bl.GetStoreById(id);
-            if(foundSto.Id != 0)
-            {
-                return Ok(foundSto);
-            }
-            else
-            {
-                return NoContent();
-            }
+            List<Order> allOrd = _bl.GetAllOrders(id);
+            _memoryCache.Set("order", allOrd, new TimeSpan(0, 0, 30));
+            return _bl.GetAllOrders(id);
         }
 
-        // POST api/<StoreController>
+        // POST api/<OrderController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<StoreController>/5
+        // PUT api/<OrderController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<StoreController>/5
+        // DELETE api/<OrderController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
