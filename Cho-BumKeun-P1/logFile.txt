@@ -1,0 +1,335 @@
+2022-01-20 08:16:50.575 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 08:16:50.589 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 08:16:50.593 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 08:16:50.594 -08:00 [INF] Hosting environment: Development
+2022-01-20 08:16:50.594 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 08:16:51.133 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 08:16:51.439 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 08:16:51.439 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 308.6974ms
+2022-01-20 08:16:51.455 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 16.2048ms
+2022-01-20 08:16:51.621 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 08:16:51.744 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 123.0962ms
+2022-01-20 08:17:57.104 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 08:17:57.126 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 08:17:57.130 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 08:17:57.130 -08:00 [INF] Hosting environment: Development
+2022-01-20 08:17:57.130 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 08:17:58.404 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 08:17:58.734 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 334.3797ms
+2022-01-20 08:17:58.753 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 08:17:58.757 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 3.5310ms
+2022-01-20 08:17:58.947 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 08:17:59.069 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.3235ms
+2022-01-20 08:18:34.430 -08:00 [INF] Request starting HTTP/2 POST https://localhost:7185/api/Customer application/json 74
+2022-01-20 08:18:34.445 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.CustomerController.Post (Cho-BumKeun-P1)'
+2022-01-20 08:18:34.470 -08:00 [INF] Route matched with {action = "Post", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Post(Models.Customer) on controller Cho_BumKeun_P1.Controllers.CustomerController (Cho-BumKeun-P1).
+2022-01-20 08:18:36.139 -08:00 [INF] Customer added Username: loggigntestAPI Password: hopeitworks
+2022-01-20 08:18:36.147 -08:00 [INF] Executing CreatedResult, writing value of type 'Models.Customer'.
+2022-01-20 08:18:36.155 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.CustomerController.Post (Cho-BumKeun-P1) in 1678.7829ms
+2022-01-20 08:18:36.156 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.CustomerController.Post (Cho-BumKeun-P1)'
+2022-01-20 08:18:36.156 -08:00 [INF] Request finished HTTP/2 POST https://localhost:7185/api/Customer application/json 74 - 201 - application/json;+charset=utf-8 1726.7886ms
+2022-01-20 08:18:49.297 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 08:18:49.307 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 08:18:49.310 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 08:18:49.310 -08:00 [INF] Hosting environment: Development
+2022-01-20 08:18:49.310 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 08:18:50.406 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 08:18:50.705 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 08:18:50.707 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 307.7416ms
+2022-01-20 08:18:50.716 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 4.4498ms
+2022-01-20 08:18:50.898 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 08:18:51.028 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.4198ms
+2022-01-20 08:19:14.874 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 08:19:14.883 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 08:19:14.886 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 08:19:14.887 -08:00 [INF] Hosting environment: Development
+2022-01-20 08:19:14.887 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 08:19:16.827 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 08:19:17.161 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 341.1856ms
+2022-01-20 08:19:17.174 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 08:19:17.179 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 5.2406ms
+2022-01-20 08:19:17.368 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 08:19:17.487 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.8452ms
+2022-01-20 08:19:57.937 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Order?userId=1 - -
+2022-01-20 08:19:57.959 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetUserOrder (Cho-BumKeun-P1)'
+2022-01-20 08:19:57.979 -08:00 [INF] Route matched with {action = "GetUserOrder", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Models.Order] GetUserOrder(Int32) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 08:19:59.173 -08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-20 08:19:59.185 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.GetUserOrder (Cho-BumKeun-P1) in 1200.2919ms
+2022-01-20 08:19:59.186 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetUserOrder (Cho-BumKeun-P1)'
+2022-01-20 08:19:59.187 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Order?userId=1 - - - 200 - application/json;+charset=utf-8 1249.8639ms
+2022-01-20 08:20:12.724 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Order/3?storeId=3 - -
+2022-01-20 08:20:12.726 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1)'
+2022-01-20 08:20:12.729 -08:00 [INF] Route matched with {action = "GetStoreOrder", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Models.Order] GetStoreOrder(Int32) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 08:20:12.839 -08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-20 08:20:12.840 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1) in 110.3986ms
+2022-01-20 08:20:12.840 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1)'
+2022-01-20 08:20:12.840 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Order/3?storeId=3 - - - 200 - application/json;+charset=utf-8 116.3831ms
+2022-01-20 08:20:14.116 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Order/3?storeId=3 - -
+2022-01-20 08:20:14.117 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1)'
+2022-01-20 08:20:14.117 -08:00 [INF] Route matched with {action = "GetStoreOrder", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Models.Order] GetStoreOrder(Int32) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 08:20:14.217 -08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-20 08:20:14.218 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1) in 100.6212ms
+2022-01-20 08:20:14.218 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1)'
+2022-01-20 08:20:14.218 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Order/3?storeId=3 - - - 200 - application/json;+charset=utf-8 101.5410ms
+2022-01-20 08:20:15.962 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Order/3?storeId=3 - -
+2022-01-20 08:20:15.962 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1)'
+2022-01-20 08:20:15.962 -08:00 [INF] Route matched with {action = "GetStoreOrder", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Models.Order] GetStoreOrder(Int32) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 08:20:16.062 -08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-20 08:20:16.062 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1) in 99.5643ms
+2022-01-20 08:20:16.062 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1)'
+2022-01-20 08:20:16.062 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Order/3?storeId=3 - - - 200 - application/json;+charset=utf-8 100.6162ms
+2022-01-20 08:20:17.114 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Order/3?storeId=3 - -
+2022-01-20 08:20:17.115 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1)'
+2022-01-20 08:20:17.115 -08:00 [INF] Route matched with {action = "GetStoreOrder", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Models.Order] GetStoreOrder(Int32) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 08:20:17.231 -08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-20 08:20:17.231 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1) in 116.0355ms
+2022-01-20 08:20:17.231 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.GetStoreOrder (Cho-BumKeun-P1)'
+2022-01-20 08:20:17.231 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Order/3?storeId=3 - - - 200 - application/json;+charset=utf-8 117.1054ms
+2022-01-20 08:22:33.064 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Product - -
+2022-01-20 08:22:33.074 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.ProductController.Get (Cho-BumKeun-P1)'
+2022-01-20 08:22:33.085 -08:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Collections.Generic.List`1[Models.Product] Get() on controller Cho_BumKeun_P1.Controllers.ProductController (Cho-BumKeun-P1).
+2022-01-20 08:22:33.199 -08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Product, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-20 08:22:33.203 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.ProductController.Get (Cho-BumKeun-P1) in 117.8281ms
+2022-01-20 08:22:33.203 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.ProductController.Get (Cho-BumKeun-P1)'
+2022-01-20 08:22:33.204 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Product - - - 200 - application/json;+charset=utf-8 143.6762ms
+2022-01-20 12:44:11.289 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 12:44:11.311 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 12:44:11.317 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 12:44:11.317 -08:00 [INF] Hosting environment: Development
+2022-01-20 12:44:11.318 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 12:44:12.803 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 12:44:13.125 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 12:44:13.127 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 328.0359ms
+2022-01-20 12:44:13.129 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 3.9747ms
+2022-01-20 12:44:13.309 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 12:44:13.432 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.5548ms
+2022-01-20 13:05:47.917 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 13:05:47.927 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 13:05:47.930 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 13:05:47.930 -08:00 [INF] Hosting environment: Development
+2022-01-20 13:05:47.930 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 13:05:49.350 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 13:05:49.684 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 336.8514ms
+2022-01-20 13:05:49.685 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 13:05:49.696 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 10.4137ms
+2022-01-20 13:05:49.846 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 13:05:49.982 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.4673ms
+2022-01-20 13:16:08.372 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 13:16:08.384 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 13:16:08.387 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 13:16:08.387 -08:00 [INF] Hosting environment: Development
+2022-01-20 13:16:08.388 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 13:16:10.129 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 13:16:10.464 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 13:16:10.466 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 338.6574ms
+2022-01-20 13:16:10.479 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 15.0618ms
+2022-01-20 13:16:10.646 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 13:16:10.770 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.3584ms
+2022-01-20 13:18:12.968 -08:00 [INF] Request starting HTTP/2 POST https://localhost:7185/api/Order?storeId=3&productId=4&storeName=Bedford%20Grove%20Vapor&productName=Stardew%20Valley&quantity=2&price=15&userId=8 - 0
+2022-01-20 13:18:12.982 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:18:13.010 -08:00 [INF] Route matched with {action = "Post", controller = "Order"}. Executing controller action with signature Void Post(Int32, Int32, System.String, System.String, Int32, System.Decimal, Int32, System.DateTime) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 13:18:14.655 -08:00 [INF] Customer ordered StoreID: 3  StoreName: Bedford Grove Vapor ProductID: 4 ProductName: Stardew Valley Quantity: 2 Price: 15 UserID: 8 Time: "0001-01-01T00:00:00.0000000"
+2022-01-20 13:21:40.276 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1) in 207252.5184ms
+2022-01-20 13:21:40.278 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:21:40.281 -08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Cho_BumKeun_P1.Controllers.OrderController.Post(Int32 storeId, Int32 productId, String storeName, String productName, Int32 quantity, Decimal price, Int32 userId, DateTime time) in C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\Controllers\OrderController.cs:line 65
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-20 13:21:40.369 -08:00 [INF] Request finished HTTP/2 POST https://localhost:7185/api/Order?storeId=3&productId=4&storeName=Bedford%20Grove%20Vapor&productName=Stardew%20Valley&quantity=2&price=15&userId=8 - 0 - 500 - text/plain;+charset=utf-8 207401.4332ms
+2022-01-20 13:21:58.778 -08:00 [INF] Request starting HTTP/2 POST https://localhost:7185/api/Order?storeId=3&productId=2&storeName=Bedford%20Grove%20Vapor&productName=Monster%20Hunter%20Rise&quantity=2&price=15&userId=8 - 0
+2022-01-20 13:21:58.781 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:21:58.782 -08:00 [INF] Route matched with {action = "Post", controller = "Order"}. Executing controller action with signature Void Post(Int32, Int32, System.String, System.String, Int32, System.Decimal, Int32, System.DateTime) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 13:21:58.982 -08:00 [INF] Customer ordered StoreID: 3  StoreName: Bedford Grove Vapor ProductID: 2 ProductName: Monster Hunter Rise Quantity: 2 Price: 15 UserID: 8 Time: "0001-01-01T00:00:00.0000000"
+2022-01-20 13:21:59.237 -08:00 [INF] Inventory has been updated ProductID: 2 NewQuantity: 98
+2022-01-20 13:21:59.239 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1) in 456.7808ms
+2022-01-20 13:21:59.239 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:21:59.240 -08:00 [INF] Request finished HTTP/2 POST https://localhost:7185/api/Order?storeId=3&productId=2&storeName=Bedford%20Grove%20Vapor&productName=Monster%20Hunter%20Rise&quantity=2&price=15&userId=8 - 0 - 200 0 - 461.4696ms
+2022-01-20 13:22:31.817 -08:00 [INF] Request starting HTTP/2 POST https://localhost:7185/api/Order?storeId=3&productId=4&storeName=Bedford%20Grove%20Vapor&productName=Stardew%20Valley&quantity=2&price=15&userId=8 - 0
+2022-01-20 13:22:31.817 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:22:31.818 -08:00 [INF] Route matched with {action = "Post", controller = "Order"}. Executing controller action with signature Void Post(Int32, Int32, System.String, System.String, Int32, System.Decimal, Int32, System.DateTime) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 13:22:32.053 -08:00 [INF] Customer ordered StoreID: 3  StoreName: Bedford Grove Vapor ProductID: 4 ProductName: Stardew Valley Quantity: 2 Price: 15 UserID: 8 Time: "0001-01-01T00:00:00.0000000"
+2022-01-20 13:23:46.161 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1) in 74343.415ms
+2022-01-20 13:23:46.162 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:23:46.163 -08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Cho_BumKeun_P1.Controllers.OrderController.Post(Int32 storeId, Int32 productId, String storeName, String productName, Int32 quantity, Decimal price, Int32 userId, DateTime time) in C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\Controllers\OrderController.cs:line 65
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-20 13:23:46.166 -08:00 [INF] Request finished HTTP/2 POST https://localhost:7185/api/Order?storeId=3&productId=4&storeName=Bedford%20Grove%20Vapor&productName=Stardew%20Valley&quantity=2&price=15&userId=8 - 0 - 500 - text/plain;+charset=utf-8 74348.9366ms
+2022-01-20 13:24:05.551 -08:00 [INF] Request starting HTTP/2 POST https://localhost:7185/api/Order?storeId=3&productId=2&storeName=Bedford%20Grove%20Vapor&productName=Monster%20Hunter%20Rise&quantity=5&price=15&userId=8 - 0
+2022-01-20 13:24:05.551 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:24:05.552 -08:00 [INF] Route matched with {action = "Post", controller = "Order"}. Executing controller action with signature Void Post(Int32, Int32, System.String, System.String, Int32, System.Decimal, Int32, System.DateTime) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 13:24:05.755 -08:00 [INF] Customer ordered StoreID: 3  StoreName: Bedford Grove Vapor ProductID: 2 ProductName: Monster Hunter Rise Quantity: 5 Price: 15 UserID: 8 Time: "0001-01-01T00:00:00.0000000"
+2022-01-20 13:24:05.992 -08:00 [INF] Inventory has been updated ProductID: 2 NewQuantity: 95
+2022-01-20 13:24:05.992 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1) in 440.1395ms
+2022-01-20 13:24:05.992 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:24:05.992 -08:00 [INF] Request finished HTTP/2 POST https://localhost:7185/api/Order?storeId=3&productId=2&storeName=Bedford%20Grove%20Vapor&productName=Monster%20Hunter%20Rise&quantity=5&price=15&userId=8 - 0 - 200 0 - 442.1162ms
+2022-01-20 13:32:45.787 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 13:32:45.797 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 13:32:45.800 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 13:32:45.800 -08:00 [INF] Hosting environment: Development
+2022-01-20 13:32:45.800 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 13:32:47.900 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 13:32:48.242 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 13:32:48.243 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 345.9164ms
+2022-01-20 13:32:48.252 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 9.9580ms
+2022-01-20 13:32:48.447 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 13:32:48.617 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.7831ms
+2022-01-20 13:33:30.729 -08:00 [INF] Request starting HTTP/2 POST https://localhost:7185/api/Order?storeId=4&productId=4&storeName=Market%20Square%20Vapor&productName=Stardew%20Valley&quantity=2&price=15&userId=9 - 0
+2022-01-20 13:33:30.746 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:33:30.775 -08:00 [INF] Route matched with {action = "Post", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Post(Int32, Int32, System.String, System.String, Int32, System.Decimal, Int32, System.DateTime) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 13:33:32.352 -08:00 [INF] Customer ordered StoreID: 4  StoreName: Market Square Vapor ProductID: 4 ProductName: Stardew Valley Quantity: 2 Price: 15 UserID: 9 Time: "0001-01-01T00:00:00.0000000"
+2022-01-20 13:33:57.414 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 13:33:57.426 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 13:33:57.429 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 13:33:57.429 -08:00 [INF] Hosting environment: Development
+2022-01-20 13:33:57.430 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 13:33:58.463 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 13:33:58.769 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 13:33:58.771 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 314.4793ms
+2022-01-20 13:33:58.772 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 3.4998ms
+2022-01-20 13:33:58.949 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 13:33:59.084 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.4639ms
+2022-01-20 13:34:20.043 -08:00 [INF] Request starting HTTP/2 POST https://localhost:7185/api/Order?storeId=4&productId=4&storeName=Market%20Square%20Vapor&productName=Stardew%20Valley&quantity=2&price=15&userId=9 - 0
+2022-01-20 13:34:20.057 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:34:20.090 -08:00 [INF] Route matched with {action = "Post", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Post(Int32, Int32, System.String, System.String, Int32, System.Decimal, Int32, System.DateTime) on controller Cho_BumKeun_P1.Controllers.OrderController (Cho-BumKeun-P1).
+2022-01-20 13:34:21.711 -08:00 [INF] Customer ordered StoreID: 4  StoreName: Market Square Vapor ProductID: 4 ProductName: Stardew Valley Quantity: 2 Price: 15 UserID: 9 Time: "0001-01-01T00:00:00.0000000"
+2022-01-20 13:34:21.948 -08:00 [INF] Inventory has been updated ProductID: 4 NewQuantity: 2
+2022-01-20 13:34:21.953 -08:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2022-01-20 13:34:21.958 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1) in 1861.8382ms
+2022-01-20 13:34:21.958 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.OrderController.Post (Cho-BumKeun-P1)'
+2022-01-20 13:34:21.958 -08:00 [INF] Request finished HTTP/2 POST https://localhost:7185/api/Order?storeId=4&productId=4&storeName=Market%20Square%20Vapor&productName=Stardew%20Valley&quantity=2&price=15&userId=9 - 0 - 200 0 - 1915.9560ms
+2022-01-20 13:40:30.608 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 13:40:30.619 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 13:40:30.621 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 13:40:30.622 -08:00 [INF] Hosting environment: Development
+2022-01-20 13:40:30.622 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 13:40:34.090 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 13:40:34.412 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 13:40:34.413 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 326.3346ms
+2022-01-20 13:40:34.422 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 10.4064ms
+2022-01-20 13:40:34.576 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 13:40:34.664 -08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Store/{id}" for actions - Cho_BumKeun_P1.Controllers.StoreController.Get (Cho-BumKeun-P1),Cho_BumKeun_P1.Controllers.StoreController.Get (Cho-BumKeun-P1). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-20 13:40:34.704 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 127.9875ms
+2022-01-20 13:40:59.897 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 13:40:59.908 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 13:40:59.911 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 13:40:59.911 -08:00 [INF] Hosting environment: Development
+2022-01-20 13:40:59.911 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 13:41:01.838 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 13:41:02.168 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 331.8630ms
+2022-01-20 13:41:02.185 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 13:41:02.189 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 3.6343ms
+2022-01-20 13:41:02.340 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 13:41:02.463 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.8780ms
+2022-01-20 13:41:29.651 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Store/1?storeId=1&select=low - -
+2022-01-20 13:41:29.674 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.StoreController.Get (Cho-BumKeun-P1)'
+2022-01-20 13:41:29.708 -08:00 [INF] Route matched with {action = "Get", controller = "Store"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Models.Order]] Get(Int32, System.String) on controller Cho_BumKeun_P1.Controllers.StoreController (Cho-BumKeun-P1).
+2022-01-20 13:41:30.879 -08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-20 13:41:30.892 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.StoreController.Get (Cho-BumKeun-P1) in 1178.571ms
+2022-01-20 13:41:30.893 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.StoreController.Get (Cho-BumKeun-P1)'
+2022-01-20 13:41:30.894 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Store/1?storeId=1&select=low - - - 200 - application/json;+charset=utf-8 1242.8348ms
+2022-01-20 13:42:22.907 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Store/1?storeId=1&select=fsfsda - -
+2022-01-20 13:42:22.917 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.StoreController.Get (Cho-BumKeun-P1)'
+2022-01-20 13:42:22.918 -08:00 [INF] Route matched with {action = "Get", controller = "Store"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Models.Order]] Get(Int32, System.String) on controller Cho_BumKeun_P1.Controllers.StoreController (Cho-BumKeun-P1).
+2022-01-20 13:42:22.919 -08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-01-20 13:42:22.921 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.StoreController.Get (Cho-BumKeun-P1) in 3.2038ms
+2022-01-20 13:42:22.921 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.StoreController.Get (Cho-BumKeun-P1)'
+2022-01-20 13:42:22.921 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Store/1?storeId=1&select=fsfsda - - - 400 - application/problem+json;+charset=utf-8 18.0241ms
+2022-01-20 13:44:33.166 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 13:44:33.178 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 13:44:33.181 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 13:44:33.181 -08:00 [INF] Hosting environment: Development
+2022-01-20 13:44:33.181 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 13:44:34.365 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 13:44:34.722 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 13:44:34.724 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 359.8615ms
+2022-01-20 13:44:34.733 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 11.0600ms
+2022-01-20 13:44:34.893 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 13:44:35.022 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.5998ms
+2022-01-20 13:51:17.516 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-20 13:51:17.529 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-20 13:51:17.535 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-20 13:51:17.536 -08:00 [INF] Hosting environment: Development
+2022-01-20 13:51:17.536 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-20 13:51:19.652 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-20 13:51:19.986 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-20 13:51:19.988 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 343.5806ms
+2022-01-20 13:51:19.996 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 10.0544ms
+2022-01-20 13:51:20.161 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-20 13:51:20.294 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.5026ms
+2022-01-21 07:15:25.243 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-21 07:15:25.254 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-21 07:15:25.257 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-21 07:15:25.257 -08:00 [INF] Hosting environment: Development
+2022-01-21 07:15:25.257 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-21 07:15:26.018 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-21 07:15:26.439 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-21 07:15:26.441 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 425.6989ms
+2022-01-21 07:15:26.445 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 6.2227ms
+2022-01-21 07:15:26.624 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-21 07:15:26.771 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.9815ms
+2022-01-21 07:16:16.058 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Customer/8?select=high - -
+2022-01-21 07:16:16.083 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.CustomerController.Get (Cho-BumKeun-P1)'
+2022-01-21 07:16:16.122 -08:00 [INF] Route matched with {action = "Get", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Models.Order]] Get(Int32, System.String) on controller Cho_BumKeun_P1.Controllers.CustomerController (Cho-BumKeun-P1).
+2022-01-21 07:16:17.795 -08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-21 07:16:17.810 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.CustomerController.Get (Cho-BumKeun-P1) in 1681.8936ms
+2022-01-21 07:16:17.811 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.CustomerController.Get (Cho-BumKeun-P1)'
+2022-01-21 07:16:17.811 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Customer/8?select=high - - - 200 - application/json;+charset=utf-8 1754.1287ms
+2022-01-21 07:16:29.015 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Customer/8?select=old - -
+2022-01-21 07:16:29.018 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.CustomerController.Get (Cho-BumKeun-P1)'
+2022-01-21 07:16:29.019 -08:00 [INF] Route matched with {action = "Get", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Models.Order]] Get(Int32, System.String) on controller Cho_BumKeun_P1.Controllers.CustomerController (Cho-BumKeun-P1).
+2022-01-21 07:16:29.133 -08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-21 07:16:29.133 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.CustomerController.Get (Cho-BumKeun-P1) in 114.4177ms
+2022-01-21 07:16:29.133 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.CustomerController.Get (Cho-BumKeun-P1)'
+2022-01-21 07:16:29.134 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Customer/8?select=old - - - 200 - application/json;+charset=utf-8 118.5458ms
+2022-01-21 07:16:41.085 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/api/Customer/8?select=new - -
+2022-01-21 07:16:41.085 -08:00 [INF] Executing endpoint 'Cho_BumKeun_P1.Controllers.CustomerController.Get (Cho-BumKeun-P1)'
+2022-01-21 07:16:41.085 -08:00 [INF] Route matched with {action = "Get", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Models.Order]] Get(Int32, System.String) on controller Cho_BumKeun_P1.Controllers.CustomerController (Cho-BumKeun-P1).
+2022-01-21 07:16:41.175 -08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-21 07:16:41.175 -08:00 [INF] Executed action Cho_BumKeun_P1.Controllers.CustomerController.Get (Cho-BumKeun-P1) in 89.813ms
+2022-01-21 07:16:41.175 -08:00 [INF] Executed endpoint 'Cho_BumKeun_P1.Controllers.CustomerController.Get (Cho-BumKeun-P1)'
+2022-01-21 07:16:41.176 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/api/Customer/8?select=new - - - 200 - application/json;+charset=utf-8 91.0772ms

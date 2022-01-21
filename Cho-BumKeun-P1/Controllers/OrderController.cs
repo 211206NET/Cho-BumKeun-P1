@@ -4,8 +4,6 @@ using BL;
 using CustomExceptions;
 using Microsoft.Extensions.Caching.Memory;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace Cho_BumKeun_P1.Controllers
 {
     [Route("api/[controller]")]
@@ -60,23 +58,32 @@ namespace Cho_BumKeun_P1.Controllers
 
         // POST api/<OrderController>
         [HttpPost]
-        public void Post(int storeId, int productId, string storeName, string productName, int quantity, decimal price, int userId, DateTime time)
+        public ActionResult Post(int storeId, int productId, string storeName, string productName, int quantity, decimal price, int userId, DateTime time)
         {
             List<Product> allProducts = _bl.GetAllProducts();
-            _bl.AddOrder(storeId, productId, storeName, productName, quantity, price, userId, time);
-            _bl.UpdateInventory(productId, allProducts[productId].Inventory-quantity);
+            Product product = allProducts.FirstOrDefault(p => p.Id == productId);
+            if (product != null)
+            {
+                _bl.AddOrder(storeId, productId, storeName, productName, quantity, price, userId, time);
+                _bl.UpdateInventory(productId, product.Inventory-quantity);
+                return Ok();
+            }
+            else
+            {
+                return BadRequest("Invalid Product ID");
+            }
         }
 
         // PUT api/<OrderController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody] string value)
+        //{
+        //}
 
         // DELETE api/<OrderController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

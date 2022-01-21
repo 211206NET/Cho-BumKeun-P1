@@ -5,8 +5,6 @@ using BL;
 using CustomExceptions;
 using Microsoft.Extensions.Caching.Memory;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace Cho_BumKeun_P1.Controllers
 {
     [Route("api/[controller]")]
@@ -50,16 +48,46 @@ namespace Cho_BumKeun_P1.Controllers
             }
         }
 
-        // PUT api/<CustomerController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        // GET api/<StoreController>/5
+        [HttpGet("{userId}")]
+        public ActionResult<List<Order>> Get(int userId, string select)
         {
+            if (select == "old")
+            {
+                List<Order> allOrders = _bl.GetAllOrdersDateON(userId);
+                return Ok(allOrders);
+            }
+            else if (select == "new")
+            {
+                List<Order> allOrders = _bl.GetAllOrdersDateNO(userId);
+                return Ok(allOrders);
+            }
+            else if (select == "low")
+            {
+                List<Order> allOrders = _bl.GetAllOrdersPriceLH(userId);
+                return Ok(allOrders);
+            }
+            else if (select == "high")
+            {
+                List<Order> allOrders = _bl.GetAllOrdersPriceHL(userId);
+                return Ok(allOrders);
+            }
+            else
+            {
+                return BadRequest();
+            }
         }
 
+        // PUT api/<CustomerController>/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody] string value)
+        //{
+        //}
+
         // DELETE api/<CustomerController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

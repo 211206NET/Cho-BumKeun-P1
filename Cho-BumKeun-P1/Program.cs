@@ -1,7 +1,10 @@
 using DL;
 using BL;
+using Serilog;
 
+Log.Logger = new LoggerConfiguration().Enrich.FromLogContext().WriteTo.File("logFile.txt").CreateLogger();
 var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog();
 
 // Add services to the container.
 builder.Services.AddMemoryCache();
