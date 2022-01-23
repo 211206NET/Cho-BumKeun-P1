@@ -2,7 +2,6 @@
 using Models;
 using BL;
 using CustomExceptions;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace Cho_BumKeun_P1.Controllers
 {
@@ -11,19 +10,19 @@ namespace Cho_BumKeun_P1.Controllers
     public class StoreController : ControllerBase
     {
         private IBL _bl;
-        private IMemoryCache _memoryCache;
-        public StoreController(IBL bl, IMemoryCache memoryCache)
+        public StoreController(IBL bl)
         {
             _bl = bl;
-            _memoryCache = memoryCache;
         }
 
+        /// <summary>
+        /// Shows list of all stores
+        /// </summary>
+        /// <returns>List of stores</returns>
         // GET: api/<StoreController>
         [HttpGet]
         public List<Store> Get()
         {
-            //List<Store> allSto = _bl.GetAllStores();
-            //_memoryCache.Set("store", allSto, new TimeSpan(0,0,30));
             return _bl.GetAllStores();
         }
 
@@ -31,17 +30,23 @@ namespace Cho_BumKeun_P1.Controllers
         //[HttpGet("{id}")]
         //public ActionResult<Store> Get(int id)
         //{
-        //    Store foundSto = _bl.GetStoreById(id);
-        //    if (foundSto.Id != 0)
-        //    {
-        //        return Ok(foundSto);
-        //    }
-        //    else
-        //    {
-        //        return NoContent();
-        //    }
+        //   Store foundSto = _bl.GetStoreById(id);
+        //   if (foundSto.Id != 0)
+        //   {
+        //       return Ok(foundSto);
+        //   }
+        //   else
+        //   {
+        //       return NoContent();
+        //   }
         //}
 
+        /// <summary>
+        /// Gets all store orders with sort selection
+        /// </summary>
+        /// <param name="storeId">int store ID</param>
+        /// <param name="select">string selection choice</param>
+        /// <returns>Sorted list of all store orders</returns>
         // GET api/<StoreController>/5
         [HttpGet("{storeId}")]
         public ActionResult<List<Order>> Get(int storeId, string select)
@@ -71,23 +76,5 @@ namespace Cho_BumKeun_P1.Controllers
                 return BadRequest();
 ;           }
         }
-
-        // POST api/<StoreController>
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
-
-        // PUT api/<StoreController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        // DELETE api/<StoreController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
     }
 }

@@ -28,7 +28,6 @@ public class CustomerMenu : IMenu
             if (existing.Password == pInput)
             {
                 goto accessMenu;
-                //Add log
             }
             else
             {

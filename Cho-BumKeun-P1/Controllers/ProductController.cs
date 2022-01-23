@@ -2,7 +2,6 @@
 using Models;
 using BL;
 using CustomExceptions;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace Cho_BumKeun_P1.Controllers
 {
@@ -11,22 +10,28 @@ namespace Cho_BumKeun_P1.Controllers
     public class ProductController : ControllerBase
     {
         private IBL _bl;
-        private IMemoryCache _memoryCache;
-        public ProductController(IBL bl, IMemoryCache memoryCache)
+        public ProductController(IBL bl)
         {
             _bl = bl;
-            _memoryCache = memoryCache;
         }
 
+        /// <summary>
+        /// Shows list of all products
+        /// </summary>
+        /// <returns>List of products</returns>
         // GET: api/<ProductController>
         [HttpGet]
         public List<Product> Get()
         {
-            //List<Product> allProd = _bl.GetAllProducts();
-            //_memoryCache.Set("product", allProd, new TimeSpan(0, 0, 30));
             return _bl.GetAllProducts();
         }
 
+        
+        /// <summary>
+        /// Search product by ID
+        /// </summary>
+        /// <param name="id">int product ID</param>
+        /// <returns>Product object</returns>
         // GET api/<ProductController>/5
         [HttpGet("{id}")]
         public ActionResult<Product> Get(int id)
@@ -42,22 +47,32 @@ namespace Cho_BumKeun_P1.Controllers
             }
         }
 
-        // POST api/<ProductController>
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
-
+        /// <summary>
+        /// Replenish product inventory
+        /// </summary>
+        /// <param name="username">string admin username</param>
+        /// <param name="password">string admin password</param>
+        /// <returns>Success message or BadRequest</returns>
         // PUT api/<ProductController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        // DELETE api/<ProductController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+        [HttpPut("{username}")]
+        public ActionResult Put(string username, string password)
+        {
+            if (username == "vaporadmin")
+            {
+                if (password == "password")
+                {
+                    _bl.ReplenishInventory();
+                    return Ok("Inventory has been replenished");
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
     }
 }

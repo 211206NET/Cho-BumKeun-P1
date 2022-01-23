@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Models;
 using BL;
 using CustomExceptions;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace Cho_BumKeun_P1.Controllers
 {
@@ -12,27 +11,16 @@ namespace Cho_BumKeun_P1.Controllers
     public class CustomerController : ControllerBase
     {
         private IBL _bl;
-        private IMemoryCache _memoryCache;
-        public CustomerController(IBL bl, IMemoryCache memoryCache)
+        public CustomerController(IBL bl)
         {
             _bl = bl;
-            _memoryCache = memoryCache;
         }
 
-        // GET: api/<CustomerController>
-        //[HttpGet]
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
-        // GET api/<CustomerController>/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
+        /// <summary>
+        /// Sign up username and password
+        /// </summary>
+        /// <param name="customerToAdd">customerToAdd object</param>
+        /// <returns>Created object or exception message</returns>
         // POST api/<CustomerController>
         [HttpPost]
         public ActionResult Post([FromBody] Customer customerToAdd)
@@ -48,6 +36,40 @@ namespace Cho_BumKeun_P1.Controllers
             }
         }
 
+        /// <summary>
+        /// Check and login if username and password match
+        /// </summary>
+        /// <param name="username">string username</param>
+        /// <param name="password">string password</param>
+        /// <returns>Success or fail</returns>
+        // GET: api/<StoreController>
+        [HttpGet]
+        public ActionResult<Customer> Get(string username, string password)
+        {
+            Customer existing = _bl.Login(new Customer {UserName = username, Password = password});
+            if (existing.Id <= 0)
+            {
+                return BadRequest("User does not exist");
+            }
+            else
+            {
+                if (existing.Password == password)
+                {
+                    return Ok("You've successfully logged in");
+                }
+                else
+                {
+                    return BadRequest("Incorrect password");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets all user's orders with sort selection
+        /// </summary>
+        /// <param name="userId">int user ID</param>
+        /// <param name="select">string selection choice</param>
+        /// <returns>Sorted list of all user's orders</returns>
         // GET api/<StoreController>/5
         [HttpGet("{userId}")]
         public ActionResult<List<Order>> Get(int userId, string select)
@@ -77,17 +99,5 @@ namespace Cho_BumKeun_P1.Controllers
                 return BadRequest();
             }
         }
-
-        // PUT api/<CustomerController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        // DELETE api/<CustomerController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
     }
 }

@@ -478,6 +478,11 @@ public class DBRepo : IRepo
         return acc;
     }
 
+    /// <summary>
+    /// Retrieves store by ID
+    /// </summary>
+    /// <param name="storeId">int store ID</param>
+    /// <returns>Store object</returns>
     public Store GetStoreById(int storeId)
     {
         string query = "SELECT * FROM Store WHERE Id = @stoId";
@@ -500,6 +505,11 @@ public class DBRepo : IRepo
         return store;
     }
 
+    /// <summary>
+    /// Retrieves product by ID
+    /// </summary>
+    /// <param name="productId">int product ID</param>
+    /// <returns>Product object</returns>
     public Product GetProductById(int productId)
     {
         string query = "SELECT * FROM Product WHERE Id = @prodId";

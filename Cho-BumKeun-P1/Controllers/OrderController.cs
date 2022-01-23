@@ -2,7 +2,6 @@
 using Models;
 using BL;
 using CustomExceptions;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace Cho_BumKeun_P1.Controllers
 {
@@ -11,51 +10,47 @@ namespace Cho_BumKeun_P1.Controllers
     public class OrderController : ControllerBase
     {
         private IBL _bl;
-        private IMemoryCache _memoryCache;
-        public OrderController(IBL bl, IMemoryCache memoryCache)
+        public OrderController(IBL bl)
         {
             _bl = bl;
-            _memoryCache = memoryCache;
         }
 
-        //// GET: api/<OrderController>
-        //[HttpGet]
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
+        /// <summary>
+        /// Gets all orders by user ID
+        /// </summary>
+        /// <param name="userId">int user ID</param>
+        /// <returns>List of user's orders</returns>
         // GET api/<OrderController>/5 by user ID
-        [HttpGet]
+        [HttpGet("{userId}")]
         public List<Order> GetUserOrder(int userId)
         {
-           //List<Order> allOrd = _bl.GetAllOrders(userId);
-           //_memoryCache.Set("order", allOrd, new TimeSpan(0, 0, 30));
             return _bl.GetAllOrders(userId);
         }
 
+        /// <summary>
+        /// Gets all orders by store ID
+        /// </summary>
+        /// <param name="storeId">int store ID</param>
+        /// <returns>List of orders place for specified store</returns>
         // GET api/OrderController>/5 by store ID
-        [HttpGet("{id}")]
+        [HttpGet("{storeId}")]
         public List<Order> GetStoreOrder(int storeId)
         {
             return _bl.StoreOrders(storeId);
         }
 
-        //[HttpGet("{id}")]
-        //public ActionResult<Order> Get(int storeId)
-        //{
-        //    List<Order> foundOrd = _bl.StoreOrders(storeId);
-        //    if (foundOrd.Count != 0)
-        //    {
-        //        return Ok(foundOrd);
-        //    }
-        //    else
-        //    {
-        //        return NoContent();
-        //    }
-        //}
-
-
+        /// <summary>
+        /// Creates an order and updates product inventory
+        /// </summary>
+        /// <param name="storeId">int store ID</param>
+        /// <param name="productId">int product ID</param>
+        /// <param name="storeName">string store name</param>
+        /// <param name="productName">string product name</param>
+        /// <param name="quantity">int quantity</param>
+        /// <param name="price">decimal price</param>
+        /// <param name="userId">int user ID</param>
+        /// <param name="time">DateTime</param>
+        /// <returns>Success or badrequest message</returns>
         // POST api/<OrderController>
         [HttpPost]
         public ActionResult Post(int storeId, int productId, string storeName, string productName, int quantity, decimal price, int userId, DateTime time)
@@ -73,17 +68,5 @@ namespace Cho_BumKeun_P1.Controllers
                 return BadRequest("Invalid Product ID");
             }
         }
-
-        // PUT api/<OrderController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        // DELETE api/<OrderController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
     }
 }
