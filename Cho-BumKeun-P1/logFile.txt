@@ -840,3 +840,14 @@ Cho_BumKeun_P1.Controllers.StoreController.Get (Cho-BumKeun-P1)
 2022-01-22 17:26:56.357 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 11.2492ms
 2022-01-22 17:26:56.525 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
 2022-01-22 17:26:56.654 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.0649ms
+2022-01-23 01:55:42.674 -08:00 [INF] Now listening on: https://localhost:7185
+2022-01-23 01:55:42.691 -08:00 [INF] Now listening on: http://localhost:5185
+2022-01-23 01:55:42.694 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 01:55:42.695 -08:00 [INF] Hosting environment: Development
+2022-01-23 01:55:42.695 -08:00 [INF] Content root path: C:\Users\Geun\RevatureProjects\211206net\Cho-BumKeun-P1\Cho-BumKeun-P1\
+2022-01-23 01:55:44.116 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/index.html - -
+2022-01-23 01:55:44.498 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - -
+2022-01-23 01:55:44.499 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/index.html - - - 200 - text/html;charset=utf-8 390.5160ms
+2022-01-23 01:55:44.501 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/_framework/aspnetcore-browser-refresh.js - - - 200 11948 application/javascript;+charset=utf-8 3.5250ms
+2022-01-23 01:55:44.665 -08:00 [INF] Request starting HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - -
+2022-01-23 01:55:44.810 -08:00 [INF] Request finished HTTP/2 GET https://localhost:7185/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.9170ms
