@@ -2,7 +2,7 @@
 ## Overview
 Looking for new games to play? Well you're at the right place! Welcome to Vapor Games where we sell a plethora of different genre games. All it takes is signing up an account, logging in with the account, and placing an order at the store of your convenience and product of your choice.
 
-##Tech Stack:
+## Tech Stack:
 * C#
 * Xunit
 * AWS RDS SQLServer DB
