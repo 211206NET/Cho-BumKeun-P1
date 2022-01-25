@@ -66,12 +66,12 @@ namespace Cho_BumKeun_P1.Controllers
                 }
                 else
                 {
-                    return BadRequest();
+                    return BadRequest("Incorrect admin password");
                 }
             }
             else
             {
-                return BadRequest();
+                return BadRequest("Incorrect admin username");
             }
         }
     }

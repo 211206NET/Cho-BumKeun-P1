@@ -30,15 +30,15 @@ namespace Cho_BumKeun_P1.Controllers
         //[HttpGet("{id}")]
         //public ActionResult<Store> Get(int id)
         //{
-        //   Store foundSto = _bl.GetStoreById(id);
-        //   if (foundSto.Id != 0)
-        //   {
-        //       return Ok(foundSto);
-        //   }
-        //   else
-        //   {
-        //       return NoContent();
-        //   }
+        //    Store foundSto = _bl.GetStoreById(id);
+        //    if (foundSto.Id != 0)
+        //    {
+        //        return Ok(foundSto);
+        //    }
+        //    else
+        //    {
+        //        return NoContent();
+        //    }
         //}
 
         /// <summary>

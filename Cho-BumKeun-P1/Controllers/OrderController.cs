@@ -33,7 +33,7 @@ namespace Cho_BumKeun_P1.Controllers
         /// <param name="storeId">int store ID</param>
         /// <returns>List of orders place for specified store</returns>
         // GET api/OrderController>/5 by store ID
-        [HttpGet("{storeId}")]
+        [HttpGet]
         public List<Order> GetStoreOrder(int storeId)
         {
             return _bl.StoreOrders(storeId);
@@ -61,7 +61,7 @@ namespace Cho_BumKeun_P1.Controllers
             {
                 _bl.AddOrder(storeId, productId, storeName, productName, quantity, price, userId, time);
                 _bl.UpdateInventory(productId, product.Inventory-quantity);
-                return Ok();
+                return Ok("Order successfully placed");
             }
             else
             {
